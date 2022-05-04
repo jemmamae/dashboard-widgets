@@ -1,3 +1,5 @@
+@import url('general-sans.css');
+
 /* Grid */
 .layout {
   display: grid;
@@ -13,15 +15,29 @@
 
 /* Widgets */
 section {
-  background: lightgray;
+  background: rgb(255, 206, 121, 0.75);
   padding: 1em;
   
   /* Relative Parent. Absolute Child */
   position: relative;
 }
 
+h1 {
+  font-family: 'GeneralSans-Semibold';
+  font-size: 4em;
+}
+
+data{
+  font-family: 'GeneralSans-Regular';
+  font-size: 2em;
+}
+
 /* Time */
 .time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .hours {
@@ -39,7 +55,10 @@ section {
 
 /* Date */
 .date {
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .month {
@@ -56,7 +75,10 @@ section {
 
 /* Weather */
 .weather {
-  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .city {
